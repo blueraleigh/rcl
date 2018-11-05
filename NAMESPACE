@@ -1,0 +1,9 @@
+useDynLib(rcl, .registration=TRUE)
+exportPattern("^[[:alpha:]]+")
+
+S3method(print, tree)
+S3method(print, qmat)
+S3method(plot, tree)
+S3method(find.mle, mk)
+S3method(find.mle, mk.covarion)
+

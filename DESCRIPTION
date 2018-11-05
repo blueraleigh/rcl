@@ -1,0 +1,10 @@
+Package: rcl
+Type: Package
+Title: R Computing Library
+Version: 1.0
+Date: 2018-05-12
+Author: Michael C. Grundler
+Maintainer: Michael C. Grundler <mcgrundler@gmail.com>
+Description: Miscellaneous computational facilities for R
+NeedsCompilation: yes
+License: Public domain
