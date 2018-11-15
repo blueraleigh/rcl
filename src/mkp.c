@@ -67,7 +67,7 @@ static double mkp_node_lk(int nstate, double *R, double *clk, struct node *node)
     init = COLUMN(clk, node->children[1]->index);
     rsf = mkp_branch_prob(nstate, node->children[1]->brlen,
         R, init, rt);
-
+    /*
     j = 0;
     repeat = nstate / 5;
     remainder = nstate % 5;
@@ -94,6 +94,9 @@ static double mkp_node_lk(int nstate, double *R, double *clk, struct node *node)
             ELEM(clk, j+0, node->index) = lf[j+0] * rt[j+0];
         case 0: ;
     }
+    */
+    for (j = 0; j < nstate; ++j)
+        ELEM(clk, j, node->index) = lf[j] * rt[j];
 
     // add up the logarithms of the scale factors as we will
     // use this for computing the final (unscaled) log likelihood
