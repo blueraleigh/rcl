@@ -89,8 +89,8 @@ struct model {
     /* Sum of all branch lengths */
     double treelen;
 
-    /* Parameter of Dirichlet hyperprior on multinomial prior
-    ** on proportional resource use vector accompanying each event of
+    /* Hyperparameter of Dirichlet prior on multinomial parameters
+    ** of proportional resource use vector accompanying each event of
     ** character change
     */
     double alpha;

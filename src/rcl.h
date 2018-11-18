@@ -63,5 +63,6 @@ SEXP rcl_sankoff_cost(SEXP, SEXP, SEXP, SEXP, SEXP);
 /* dmm_mcmc.c */
 SEXP rcl_dmm_mcmc(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 
+SEXP rcl_bmm_mcmc(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 
 #endif

@@ -50,6 +50,8 @@ static const R_CallMethodDef CallEntries[] = {
 
     CALLDEF(rcl_dmm_mcmc, 10),
 
+    CALLDEF(rcl_bmm_mcmc, 10),
+
     {NULL, NULL, 0}
 };
 
