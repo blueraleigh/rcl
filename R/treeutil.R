@@ -65,6 +65,19 @@ mrca = function(phy, node1, node2) {
 }
 
 
+
+# Initialize the structure for performing pre-order and post-order tree traversal.
+#
+# Given an initial node, this function returns a closure that can be used to
+# perform pre-order and post-order traversal of the node's subtree.
+# The canonical way to perform traversals is like so,
+#
+#     tree.step = tree.traverse(root(phy), phy)
+#     node = tree.step()
+#     while (!is.null(node)) {
+#          // perform some operations
+#          node = tree.step()
+#     }
 tree.traverse = function(node, phy, visit=c("ALL_NODES", "INTERNAL_NODES_ONLY"), order=c("PREORDER", "POSTORDER")) {
     stopifnot(is.tree(phy))
     storage.mode(node) = "integer"
